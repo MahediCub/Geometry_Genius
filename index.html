@@ -10,17 +10,98 @@
 </head>
 
 <body>
+    <!-- Header Section Started -->
     <header class="bg-emerald-100 flex justify-between mx-8 my-8 px-6 rounded-xl">
         <div class="py-4">
             <h1 class="font-bold text-3xl">Interactive</h1>
             <h3 class="font-semibold text-2xl">Geometry Genius</h3>
         </div>
         <div class="my-auto">
-            <button id="btn-blog" class="bg-sky-600 px-8 py-2 font-bold text-white rounded-xl">
-                Blog
-            </button>
+            <button id="btn-blog" class="bg-sky-600 px-8 py-2 font-bold text-white rounded-xl"> Blog </button>
         </div>
     </header>
+    <!-- Header Section End -->
+
+    <main>
+
+        <section class="w-3/4 mx-8">
+            <div class="grid grid-cols-3 gap-4">
+                <div id="random-color" class="card p-4 border text-center rounded-xl"
+                    onmouseover="setRandomColor('random-color')" onmouseout="setBackgroundNone('random-color')">
+                    <img class="mx-auto" src="images/triangle.png" alt="triangle" />
+                    <h2>Triangle</h2>
+                    <p>Area(A) = 0.5 X <span id="triangle-show-tri-b">b</span> X <span id="triangle-show-tri-h">h</span>
+                    </p>
+                    <input id="triangle-b" class="my-2 w-1/4 pl-3 border-2" type="number" placeholder="b" />
+                    <label for=""> cm </label>
+                    <input id="triangle-h" class="my-2 w-1/4 pl-3 border-2" type="number" placeholder="h" />
+                    <label for="">cm </label>
+                    <button id="btn-triangle"
+                        class=" bg-sky-800 text-white font-bold text-2xl mt-4 px-16 py-2 rounded-xl block"> Calculate
+                    </button>
+                </div>
+                <div id="random-color" class="card p-4 border text-center rounded-xl"
+                    onmouseover="setRandomColor('random-color')" onmouseout="setBackgroundNone('random-color')">
+                    <img class="mx-auto" src="images/rectangle.png" alt="rectangle" />
+                    <h2>Rectangle</h2>
+                    <p>Area(A) = 0.5 X <span id="showRect-w">b</span> X <span id="showRect-I">h</span> </p>
+                    <input id="rectangle-w" class="my-2 w-1/4 pl-3 border-2" type="number" placeholder="w" />
+                    <label for=""> cm </label>
+                    <input id="rectangle-I" class="my-2 w-1/4 pl-3 border-2" type="number" placeholder="I" />
+                    <label for="">cm </label>
+                    <button id="btn-rectangle"
+                        class=" bg-sky-800 text-white font-bold text-2xl mt-4 px-16 py-2 rounded-xl block"> Calculate
+                    </button>
+                </div>
+                <div id="para-random-color" class="p-4 border text-center rounded-xl"
+                    onmouseover="setRandomColor('para-random-color')"
+                    onmouseout="setBackgroundNone('para-random-color')" ;>
+                    <img class="mx-auto" src="images/parallelogram.png" alt="parallelogram" />
+                    <h2>Parallelogram</h2>
+                    <p>
+                        area(A) = <span id="showPara-b">b</span> X
+                        <span id="showPara-h">h</span>
+                    </p>
+                    <input id="parallelo-b" class="my-2 w-1/4 pl-3 border-2" type="text" placeholder="b " />
+                    <label for=""> cm </label>
+                    <input id="parallelo-h" class="my-2 w-1/4 pl-3 border-2" type="text" placeholder="h " />
+                    <label for="">cm </label>
+                    <button id="btn-parallelo"
+                        class="bg-sky-800 text-white font-bold text-2xl mt-4 px-16 py-2 rounded-xl block"> Calculate
+                    </button>
+                </div>
+                <div id="rhombus-random-color" class="p-4 border text-center rounded-xl"
+                    onmouseover="setRandomColor('rhombus-random-color')" onmouseout="setBackgroundNone('rhombus-random-color')">
+                    <img class="mx-auto" src="images/rhombus.png" alt="rhombus" />
+                    <h2>Rhombus</h2>
+                    <p>Area(A) = 0.5 X d1 X d2</p>
+                    <input id="rhombus-16" class="my-2 w-1/4 pl-3 border-2" type="text" value="16" />
+                    <label for=""> cm </label>
+                    <input id="rhombus-8" class="my-2 w-1/4 pl-3 border-2" type="text" value="8" />
+                    <label for="">cm </label>
+                    <button id="btn-rhom"
+                        class="bg-sky-800 text-white font-bold text-2xl mt-4 px-16 py-2 rounded-xl block">
+                        Calculate
+                    </button>
+                </div>
+                <div id="pentagon-random-color" class="p-4 border text-center rounded-xl"
+                onmouseover="setRandomColor('pentagon-random-color')" onmouseout="setBackgroundNone('pentagon-random-color')">
+                <img class="mx-auto" src="images/pentagon.png" alt="pentagon" />
+                <h1>Pentagon</h1>
+                <p>area(A) = 0.5 X p X b</p>
+                <input id="pentagon-6" class="my-2 w-1/4 pl-3 border-2" type="text" value="6" />
+                <label for=""> cm </label>
+                <input id="pentagon-10" class="my-2 w-1/4 pl-3 border-2" type="text" value="10" />
+                <label for="">cm </label>
+                <button id="btn-pentagon" class="bg-sky-800 text-white font-bold text-2xl mt-4 px-16 py-2 rounded-xl block">
+                  Calculate
+                </button>
+              </div>
+
+            </div>
+        </section>
+    </main>
+
 
 </body>
 
